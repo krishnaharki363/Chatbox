@@ -1,4 +1,4 @@
-import { openai } from "@ai-sdk/openai";
+import { google } from "@ai-sdk/google";
 import {
   streamText,
   convertToModelMessages,
@@ -9,14 +9,8 @@ export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
 
   const result = streamText({
-    model: openai.responses("gpt-5-nano"),
+    model: google("gemini-2.0-flash-001"),
     messages: convertToModelMessages(messages),
-    providerOptions: {
-      openai: {
-        reasoningEffort: "low",
-        reasoningSummary: "auto",
-      },
-    },
   });
 
   return result.toUIMessageStreamResponse({

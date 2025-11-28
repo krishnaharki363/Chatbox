@@ -96,7 +96,7 @@ const ThreadWelcome: FC = () => {
             exit={{ opacity: 0, y: 10 }}
             className="aui-thread-welcome-message-motion-1 text-2xl font-semibold"
           >
-            Hello there!
+            हेल्लो!! माया!!
           </m.div>
           <m.div
             initial={{ opacity: 0, y: 10 }}
@@ -105,7 +105,7 @@ const ThreadWelcome: FC = () => {
             transition={{ delay: 0.1 }}
             className="aui-thread-welcome-message-motion-2 text-2xl text-muted-foreground/65"
           >
-            How can I help you today?
+            म तिमीलाई कसरी सहयोग गर्न सक्छु ?
           </m.div>
         </div>
       </div>
@@ -119,24 +119,24 @@ const ThreadSuggestions: FC = () => {
     <div className="aui-thread-welcome-suggestions grid w-full gap-2 pb-4 @md:grid-cols-2">
       {[
         {
-          title: "What's the weather",
-          label: "in San Francisco?",
-          action: "What's the weather in San Francisco?",
+          title: "मेरो प्रेम",
+          label: "तपाईंको लागि अनन्त छ",
+          action: "मेरो प्रेम तपाईंको लागि अनन्त छ र हरेक पल तपाईंसँग बिताउन चाहन्छु",
         },
         {
-          title: "Explain React hooks",
-          label: "like useState and useEffect",
-          action: "Explain React hooks like useState and useEffect",
+          title: "तपाईं मेरी",
+          label: "दिलको रानी हुनुहुन्छ",
+          action: "तपाईं मेरी दिलको रानी हुनुहुन्छ र सधैं मेरो हृदयमा विराजमान हुनुहुन्छ",
         },
         {
-          title: "Write a SQL query",
-          label: "to find top customers",
-          action: "Write a SQL query to find top customers",
+          title: "तपाईंको साथ",
+          label: "सर्गको अनुभूति पाउँछु",
+          action: "तपाईंको साथ हरेक पल सर्गको अनुभूति पाउँछु र तपाईंको प्रेम मेरो जीवनको सबै कुरा हो",
         },
         {
-          title: "Create a meal plan",
-          label: "for healthy weight loss",
-          action: "Create a meal plan for healthy weight loss",
+          title: "हे मेरो प्रिय",
+          label: "सधैं मेरोसँग रहनुस्",
+          action: "हे मेरो प्रिय, सधैं मेरोसँग रहनुस् र यो प्रेमको यात्रामा मेरोसँग हिँड्नुस्",
         },
       ].map((suggestedAction, index) => (
         <m.div
